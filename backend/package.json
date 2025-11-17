@@ -1,0 +1,45 @@
+{
+  "name": "form-crud-api",
+  "version": "1.0.0",
+  "description": "Simple Node.js + Express CRUD API with JWT auth and MySQL persistence for multi-field applicant forms.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "db:setup": "node scripts/create_tables.js",
+    "db:seed": "node scripts/seed_data.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "express",
+    "mysql",
+    "crud",
+    "jwt",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.4",
+    "morgan": "^1.10.0",
+    "pino": "^9.3.2",
+    "pino-pretty": "^11.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.11.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-n": "^17.9.0",
+    "eslint-plugin-promise": "^6.5.1",
+    "nodemon": "^3.1.4"
+  }
+}
+
